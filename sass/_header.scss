@@ -1,0 +1,182 @@
+header {
+
+    .menu-container {
+        @extend .container;
+        height: 100%;
+    }
+
+    .nav-container {
+        background-color: #49473f;
+        height: 120px;
+    }
+
+    .wrapper {
+        @include wrapper-menu;
+
+
+        .menus {
+            width: 651px;
+            @include wrapper-menu;
+
+
+            ul {
+                @include flex-with-space-between;
+                width: 100%;
+
+                li {
+
+                    a {
+                        color: $color-menu-link;
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        padding-bottom: 51px;
+                        padding-top: 53px;
+
+                        &.active,
+                        &:hover {
+                            color: $primary-color;
+                            border-bottom: 2px solid $primary-color;
+                        }
+
+                    }
+
+                    i {
+                        color: $color-menu-link;
+                    }
+                }
+            }
+        }
+    }
+
+    .jumbotron {
+        background-color: #3c3c3c;
+        padding: 245px 0px;
+
+        .titles {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            h1,
+            h3 {
+                font-size: 35px;
+            }
+
+            h2 {
+                font-size: 60px;
+                margin-top: 42px;
+                margin-bottom: 30px;
+            }
+
+            h1,
+            h2,
+                {
+                color: $second-color;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-weight: 300;
+                color: #d4d4d4;
+                margin-bottom: 142px;
+            }
+
+            h1 span {
+                color: $primary-color;
+            }
+        }
+
+        .actions {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+
+            a.button {
+                @include styles-for-button;
+            }
+
+            a.other-color {
+                background-color: $third-color;
+            }
+
+            a.button:nth-child(3) {
+                margin: 0;
+            }
+
+            .prewiew {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            .block {
+                width: 171px;
+                height: 105px;
+                margin-bottom: 18px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .hover-arrow {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .arrow {
+                @include styles-for-slider;
+
+                &.active,
+                &:hover {
+                    background-color: $primary-color;
+                    color: $second-color;
+                }
+            }
+        }
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+
+
+        .element {
+            background-color: #1c2a33;
+            height: 374px;
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            img {
+                height: 97px;
+                margin-bottom: 48px;
+            }
+
+
+            .feature {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase
+            }
+        }
+        
+        .element:nth-child(odd) {
+            @include primary-border-top;
+        }
+
+        .element:nth-child(even) {
+            background-color: $primary-color;
+            @include white-border-top;
+        }
+    }
+}

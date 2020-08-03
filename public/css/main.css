@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Montserrat; }
+
+li {
+  list-style: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.container, header .menu-container {
+  width: 1140px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+header .menu-container {
+  height: 100%; }
+
+header .nav-container {
+  background-color: #49473f;
+  height: 120px; }
+
+header .wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header .wrapper .menus {
+    width: 651px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .wrapper .menus ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+      header .wrapper .menus ul li a {
+        color: #b8b8b8;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 51px;
+        padding-top: 53px; }
+        header .wrapper .menus ul li a.active, header .wrapper .menus ul li a:hover {
+          color: #18cfab;
+          border-bottom: 2px solid #18cfab; }
+      header .wrapper .menus ul li i {
+        color: #b8b8b8; }
+
+header .jumbotron {
+  background-color: #3c3c3c;
+  padding: 245px 0px; }
+  header .jumbotron .titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    header .jumbotron .titles h1,
+    header .jumbotron .titles h3 {
+      font-size: 35px; }
+    header .jumbotron .titles h2 {
+      font-size: 60px;
+      margin-top: 42px;
+      margin-bottom: 30px; }
+    header .jumbotron .titles h1,
+    header .jumbotron .titles h2 {
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase; }
+    header .jumbotron .titles h3 {
+      font-weight: 300;
+      color: #d4d4d4;
+      margin-bottom: 142px; }
+    header .jumbotron .titles h1 span {
+      color: #18cfab; }
+  header .jumbotron .actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    header .jumbotron .actions a.button {
+      color: #fff;
+      padding: 22px 0px;
+      background-color: #18cfab;
+      font-size: 13px;
+      border-radius: 4px;
+      border-top: 2px solid #ffffff;
+      text-transform: uppercase;
+      margin-right: 28px;
+      min-width: 166px;
+      text-align: center; }
+    header .jumbotron .actions a.other-color {
+      background-color: #00cbf6; }
+    header .jumbotron .actions a.button:nth-child(3) {
+      margin: 0; }
+    header .jumbotron .actions .prewiew {
+      position: absolute;
+      top: 0;
+      right: 0; }
+    header .jumbotron .actions .block {
+      width: 171px;
+      height: 105px;
+      margin-bottom: 18px; }
+    header .jumbotron .actions img {
+      width: 100%;
+      height: 100%; }
+    header .jumbotron .actions .hover-arrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+    header .jumbotron .actions .arrow {
+      padding: 24px 28px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #3c4140;
+      color: #878787; }
+      header .jumbotron .actions .arrow.active, header .jumbotron .actions .arrow:hover {
+        background-color: #18cfab;
+        color: #fff; }
+
+header .flex-container {
+  display: flex;
+  flex-direction: row; }
+  header .flex-container .element {
+    background-color: #1c2a33;
+    height: 374px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    header .flex-container .element img {
+      height: 97px;
+      margin-bottom: 48px; }
+    header .flex-container .element .feature {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase; }
+  header .flex-container .element:nth-child(odd) {
+    border-top: 7px solid #18cfab;
+    color: #18cfab; }
+  header .flex-container .element:nth-child(even) {
+    background-color: #18cfab;
+    border-top: 7px solid #fff;
+    color: #fff; }
