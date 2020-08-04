@@ -16,8 +16,17 @@ ul {
 a {
   text-decoration: none; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0; }
+
+h2 {
+  text-align: center;
+  color: #4e4e4e;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 40px; }
 
 header .menu-container {
   height: 100%; }
@@ -150,3 +159,133 @@ header .flex-container {
     background-color: #18cfab;
     border-top: 7px solid #fff;
     color: #fff; }
+
+section.features {
+  padding: 99px 0px; }
+  section.features .main-title {
+    position: relative; }
+  section.features .main-title::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/3-layers.png);
+    width: 88px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px; }
+  section.features .grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    section.features .grid .item {
+      display: flex;
+      flex-direction: column;
+      width: 325px; }
+    section.features .grid p {
+      color: #777777;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 25px; }
+    section.features .grid .icon-with-title i {
+      padding-right: 25px;
+      font-size: 20px;
+      color: #18cfab; }
+    section.features .grid .icon-with-title {
+      color: #717171;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 40px; }
+    section.features .grid .item:hover .icon-with-title {
+      color: #18cfab;
+      cursor: pointer; }
+
+@media only screen and (max-width: 768px) {
+  header .menu-container {
+    width: 700px; }
+  header .wrapper {
+    padding: 0 15px; }
+    header .wrapper .menus {
+      display: none; }
+  header .jumbotron {
+    padding: 110px 0px;
+    padding-bottom: 350px; }
+    header .jumbotron .menu-container {
+      width: 700px; }
+    header .jumbotron .titles h3 {
+      font-size: 29px;
+      margin-bottom: 60px; }
+    header .jumbotron .actions .prewiew {
+      top: 125px;
+      left: 0;
+      width: 170px;
+      margin: 0 auto; }
+    header .jumbotron a.button.right-indent {
+      margin-right: 0px; }
+  header .flex-container .element {
+    height: 172px; }
+    header .flex-container .element .feature {
+      font-size: 11px; }
+    header .flex-container .element img {
+      height: 40px;
+      margin-bottom: 25px; }
+  section.features {
+    padding: 60px 15px; }
+    section.features .container, section.features header .menu-container, header section.features .menu-container {
+      width: 100%; }
+    section.features .grid {
+      justify-content: center; }
+      section.features .grid p {
+        font-size: 18px; } }
+
+@media only screen and (max-width: 1024px) {
+  header .menu-container {
+    width: 995px; }
+  header .wrapper {
+    padding: 0 15px; }
+    header .wrapper .menus {
+      display: none; }
+  header .jumbotron {
+    padding: 100px 0px;
+    padding-bottom: 350px; }
+    header .jumbotron .menu-container {
+      width: 700px; }
+    header .jumbotron .titles h1 {
+      margin-bottom: 12px; }
+    header .jumbotron .titles h2 {
+      margin-top: 42px; }
+    header .jumbotron .titles h3 {
+      font-size: 29px;
+      margin-bottom: 85px;
+      margin-top: 52px; }
+    header .jumbotron .actions .prewiew {
+      top: 130px;
+      left: 0;
+      width: 170px;
+      margin: 0 auto; }
+    header .jumbotron a.button.right-indent {
+      margin-right: 0px; }
+  header .flex-container .element {
+    height: 172px; }
+    header .flex-container .element .feature {
+      font-size: 15px; }
+    header .flex-container .element img {
+      height: 53px;
+      margin-bottom: 25px; }
+  section.features {
+    padding: 75px 15px; }
+    section.features .container, section.features header .menu-container, header section.features .menu-container {
+      width: 100%; }
+    section.features .grid {
+      justify-content: center; }
+      section.features .grid p {
+        font-size: 23px;
+        line-height: 35px; }
+      section.features .grid .icon-with-title {
+        font-size: 25px; }
+      section.features .grid .item {
+        width: 450px;
+        padding: 0 12px;
+        margin-bottom: 25px; } }

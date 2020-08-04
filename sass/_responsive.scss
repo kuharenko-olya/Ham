@@ -1,0 +1,172 @@
+@media only screen and (max-width: 768px) {
+    header {
+
+        .menu-container {
+            width: 700px;
+        }
+
+        .wrapper {
+            padding: 0 15px;
+
+            .menus {
+                display: none;
+            }
+        }
+
+        .jumbotron {
+            padding: 110px 0px;
+            padding-bottom: 350px;
+
+            .menu-container {
+                width: 700px;
+            }
+
+            .titles h3 {
+                font-size: 29px;
+                margin-bottom: 60px;
+            }
+
+
+            .actions .prewiew {
+                top: 125px;
+                left: 0;
+                width: 170px;
+                margin: 0 auto;
+            }
+
+            a.button.right-indent {
+                margin-right: 0px;
+            }
+        }
+
+        .flex-container {
+            .element {
+                height: 172px;
+
+                .feature {
+                    font-size: 11px;
+                }
+
+                img {
+                    height: 40px;
+                    margin-bottom: 25px;
+                }
+
+            }
+        }
+
+    }
+
+    section.features {
+        padding: 60px 15px;
+
+        .container {
+            width: 100%;
+        }
+
+        .grid {
+            justify-content: center;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    header {
+
+        .menu-container {
+            width: 995px;
+        }
+
+        .wrapper {
+            padding: 0 15px;
+
+            .menus {
+                display: none;
+            }
+        }
+
+        .jumbotron {
+            padding: 100px 0px;
+            padding-bottom: 350px;
+
+            .menu-container {
+                width: 700px;
+            }
+
+            .titles h1 {
+                margin-bottom: 12px;
+            }
+
+            .titles h2 {
+                margin-top: 42px;
+            }
+
+            .titles h3 {
+                font-size: 29px;
+                margin-bottom: 85px;
+                margin-top: 52px;
+            }
+
+            .actions .prewiew {
+                top: 130px;
+                left: 0;
+                width: 170px;
+                margin: 0 auto;
+            }
+
+            a.button.right-indent {
+                margin-right: 0px;
+            }
+        }
+
+        .flex-container {
+            .element {
+                height: 172px;
+
+                .feature {
+                    font-size: 15px;
+                }
+
+                img {
+                    height: 53px;
+                    margin-bottom: 25px;
+                }
+
+            }
+        }
+
+    }
+
+    section.features {
+        padding: 75px 15px;
+
+        .container {
+            width: 100%;
+        }
+
+        .grid {
+            justify-content: center;
+
+            p {
+                font-size: 23px;
+                line-height: 35px;
+            }
+
+            .icon-with-title {
+                font-size: 25px;
+            }
+
+            .item {
+                width: 450px;
+                padding: 0 12px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
