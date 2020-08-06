@@ -134,10 +134,10 @@ header .jumbotron {
         background-color: #18cfab;
         color: #fff; }
 
-header .flex-container {
+.flex-container {
   display: flex;
   flex-direction: row; }
-  header .flex-container .element {
+  .flex-container .element {
     background-color: #1c2a33;
     height: 374px;
     width: 480px;
@@ -145,20 +145,28 @@ header .flex-container {
     flex-direction: column;
     justify-content: center;
     text-align: center; }
-    header .flex-container .element img {
+    .flex-container .element img {
       height: 97px;
       margin-bottom: 48px; }
-    header .flex-container .element .feature {
+    .flex-container .element .feature {
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase; }
-  header .flex-container .element:nth-child(odd) {
+  .flex-container .element:nth-child(odd) {
     border-top: 7px solid #18cfab;
     color: #18cfab; }
-  header .flex-container .element:nth-child(even) {
-    background-color: #18cfab;
+  .flex-container .element:nth-child(even) {
     border-top: 7px solid #fff;
-    color: #fff; }
+    color: #fff;
+    background-color: #18cfab; }
+  .flex-container .element:nth-child(1) {
+    order: 1; }
+  .flex-container .element:nth-child(2) {
+    order: 2; }
+  .flex-container .element:nth-child(3) {
+    order: 3; }
+  .flex-container .element:nth-child(4) {
+    order: 4; }
 
 section.features {
   padding: 99px 0px; }
@@ -289,3 +297,77 @@ section.features {
         width: 450px;
         padding: 0 12px;
         margin-bottom: 25px; } }
+
+@media only screen and (max-width: 480px) {
+  header .menu-container {
+    width: 100%; }
+  header .wrapper {
+    padding: 0 15px; }
+    header .wrapper .logo {
+      margin: 0 auto; }
+    header .wrapper .menus {
+      display: none; }
+  header .jumbotron {
+    padding: 110px 0px;
+    padding-bottom: 350px; }
+    header .jumbotron .menu-container {
+      width: 100%; }
+    header .jumbotron .titles h1 {
+      font-size: 25px; }
+    header .jumbotron .titles h2 {
+      font-size: 43px; }
+    header .jumbotron .titles h3 {
+      font-size: 18px;
+      margin-bottom: 60px;
+      margin-top: 40px; }
+    header .jumbotron .actions .prewiew {
+      top: 125px;
+      left: 0;
+      width: 170px;
+      margin: 0 auto; }
+    header .jumbotron a.button.right-indent {
+      margin-right: 0px; }
+  header .flex-container {
+    flex-wrap: wrap; }
+    header .flex-container .element {
+      height: 175px;
+      width: 50%; }
+      header .flex-container .element .feature {
+        font-size: 13px; }
+      header .flex-container .element img {
+        height: 35px;
+        margin-bottom: 15px; }
+    header .flex-container .element:nth-child(1) {
+      order: 1; }
+    header .flex-container .element:nth-child(2) {
+      order: 2; }
+    header .flex-container .element:nth-child(3) {
+      order: 4;
+      border-top: none; }
+    header .flex-container .element:nth-child(4) {
+      order: 3;
+      border-top: none; }
+  section.features {
+    padding: 85px 20px; }
+    section.features .container, section.features header .menu-container, header section.features .menu-container {
+      width: 100%; }
+    section.features .grid {
+      justify-content: center; }
+      section.features .grid p {
+        font-size: 25px; }
+      section.features .grid .icon-with-title {
+        font-size: 23px; }
+      section.features .grid .item {
+        padding: 0 0px; }
+    section.features .main-title::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/3-layers.png);
+      width: 88px;
+      height: 5px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 65px; }
+    section.features h2 {
+      font-size: 30px; } }

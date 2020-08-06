@@ -3,8 +3,6 @@
     justify-content: space-between;
 }
 
-
-
 @mixin wrapper-menu {
     height: 100%;
     @include flex-with-space-between;
@@ -32,12 +30,12 @@
     color: #878787;
 }
 
-@mixin primary-border-top{
-    border-top:7px solid $primary-color;
+@mixin primary-border-top {
+    border-top: 7px solid $primary-color;
     color: $primary-color;
 }
 
-@mixin white-border-top{
-     border-top:7px solid $second-color;
-    color:$second-color;
+@mixin white-border-top {
+    border-top: 7px solid $second-color;
+    color: $second-color;
 }
