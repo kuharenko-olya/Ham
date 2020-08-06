@@ -308,25 +308,28 @@ section.features {
     header .wrapper .menus {
       display: none; }
   header .jumbotron {
-    padding: 110px 0px;
-    padding-bottom: 350px; }
+    padding: 110px 15px;
+    padding-bottom: 305px; }
     header .jumbotron .menu-container {
       width: 100%; }
     header .jumbotron .titles h1 {
-      font-size: 25px; }
+      font-size: 19px; }
     header .jumbotron .titles h2 {
-      font-size: 43px; }
+      font-size: 30px; }
     header .jumbotron .titles h3 {
-      font-size: 18px;
-      margin-bottom: 60px;
-      margin-top: 40px; }
+      font-size: 19px;
+      margin-bottom: 55px;
+      margin-top: 20px; }
+    header .jumbotron .actions {
+      flex-direction: column; }
+      header .jumbotron .actions a.button {
+        margin-right: 0px;
+        margin-bottom: 23px; }
     header .jumbotron .actions .prewiew {
-      top: 125px;
+      top: 205px;
       left: 0;
       width: 170px;
       margin: 0 auto; }
-    header .jumbotron a.button.right-indent {
-      margin-right: 0px; }
   header .flex-container {
     flex-wrap: wrap; }
     header .flex-container .element {
@@ -354,9 +357,11 @@ section.features {
     section.features .grid {
       justify-content: center; }
       section.features .grid p {
-        font-size: 25px; }
+        font-size: 20px; }
       section.features .grid .icon-with-title {
         font-size: 23px; }
+      section.features .grid .icon-with-title i {
+        padding-right: 10px; }
       section.features .grid .item {
         padding: 0 0px; }
     section.features .main-title::after {
@@ -368,6 +373,6 @@ section.features {
       left: 0;
       right: 0;
       margin: 0 auto;
-      top: 65px; }
+      top: 105px; }
     section.features h2 {
       font-size: 30px; } }
