@@ -33,5 +33,53 @@ h2 {
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
+    position: relative;
 }
 
+h2::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/3-layers.png);
+    width: 88px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 60px;
+}
+
+.purple {
+    background-color: #9c5da5;
+}
+
+.blue {
+    background-color: #11b0de;
+}
+
+.coral {
+    background-color: #d67f7f;
+}
+
+.green {
+    background-color: #20bc9d;
+}
+
+.light-yellow {
+    background-color: #bb8a36;
+}
+
+.width1 {
+    width: calc(71% + 2px);
+}
+
+.width2 {
+    width: calc(83% + 2px);
+}
+
+.width3 {
+    width: calc(65% + 2px);
+}
+
+.width4 {
+    width: calc(88% + 2px);
+}

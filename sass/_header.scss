@@ -68,6 +68,10 @@ header {
                 margin-top: 42px;
                 margin-bottom: 30px;
             }
+            
+            h2:after{
+                display: none;
+            }
 
             h1,
             h2,

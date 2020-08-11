@@ -1,62 +1,49 @@
     section.features {
-    padding: 99px 0px;
-        
-    .main-title {
-        position: relative;
-    }
-
-    .main-title::after {
-        content: "";
-        position: absolute;
-        background-image: url(../img/3-layers.png);
-        width: 88px;
-        height: 5px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        top: 60px;
-    }
-
-    .grid {
-        display: flex;
-        flex-direction: row;
-        margin-top: 75px;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        padding: 99px 0px;
 
 
-        .item {
+
+
+        .grid {
             display: flex;
-            flex-direction: column;
-            width: 325px;
-        }
+            flex-direction: row;
+            margin-top: 75px;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
-        p {
-            color: #777777;
-            font-size: 13px;
-            font-weight: 300;
-            line-height: 25px;
-        }
 
-        .icon-with-title i {
-            padding-right: 25px;
-            font-size: 20px;
-            color: $primary-color;
+            .item {
+                display: flex;
+                flex-direction: column;
+                width: 325px;
+            }
 
-        }
+            p {
+                color: #777777;
+                font-size: 13px;
+                font-weight: 300;
+                line-height: 25px;
+            }
 
-        .icon-with-title {
-            color: #717171;
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 40px;
-        }
-
-        .item {
-            &:hover .icon-with-title{
+            .icon-with-title i {
+                padding-right: 25px;
+                font-size: 20px;
                 color: $primary-color;
-                cursor: pointer;
+
+            }
+
+            .icon-with-title {
+                color: #717171;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 40px;
+            }
+
+            .item {
+                &:hover .icon-with-title {
+                    color: $primary-color;
+                    cursor: pointer;
+                }
             }
         }
     }
-}
