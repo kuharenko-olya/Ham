@@ -1,9 +1,6 @@
     section.features {
         padding: 99px 0px;
 
-
-
-
         .grid {
             display: flex;
             flex-direction: row;
@@ -33,7 +30,7 @@
             }
 
             .icon-with-title {
-                color: #717171;
+                color: $fourth-color;
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 40px;
