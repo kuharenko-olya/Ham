@@ -28,6 +28,7 @@
                 width: calc(100% + 2px);
             }
 
+            &.active,
             &:hover {
                 color: $primary-color;
             }
@@ -49,23 +50,77 @@
         flex-wrap: wrap;
         justify-content: center;
 
-        .items {
+        .item {
             width: 25%;
             @include column;
+            position: relative;
+
+            &:hover {
+                .details {
+                    display: flex;
+                }
+
+            }
+
+            .details {
+                position: absolute;
+                @include column;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                height: 0px;
+                align-items: center;
+                background-color: $second-color;
+                justify-content: center;
+                display: none;
+
+
+                &:hover {
+                    border: 1px solid $primary-color;
+                    border-top: 3px solid $primary-color;
+                }
+
+                .title {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    margin-bottom: 14px;
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+
+                .desc {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #8a8a8a;
+                }
+
+                .icon {
+                    margin-bottom: 34px;
+                    display: flex;
+
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 32px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 5px;
+                        font-size: 15px;
+                        border: 1px solid;
+                        cursor: pointer;
+                        color: $primary-color;
+
+                        &:hover {
+                            background-color: $primary-color;
+                            color: $second-color;
+                        }
+                    }
+
+                }
+            }
         }
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -499,7 +499,7 @@ section.features {
         height: 2px;
         background-color: #18cfab;
         width: calc(100% + 2px); }
-      .our-work .filters div:hover {
+      .our-work .filters div.active, .our-work .filters div:hover {
         color: #18cfab; }
     .our-work .filters div:nth-child(2) {
       border-left: none;
@@ -511,7 +511,55 @@ section.features {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    .our-work .grid .items {
+    .our-work .grid .item {
       width: 25%;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      position: relative; }
+      .our-work .grid .item:hover .details {
+        display: flex; }
+      .our-work .grid .item .details {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 0px;
+        align-items: center;
+        background-color: #fff;
+        justify-content: center;
+        display: none; }
+        .our-work .grid .item .details:hover {
+          border: 1px solid #18cfab;
+          border-top: 3px solid #18cfab; }
+        .our-work .grid .item .details .title {
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 14px;
+          cursor: pointer;
+          color: #18cfab; }
+        .our-work .grid .item .details .desc {
+          font-size: 12px;
+          font-weight: 600;
+          color: #8a8a8a; }
+        .our-work .grid .item .details .icon {
+          margin-bottom: 34px;
+          display: flex; }
+          .our-work .grid .item .details .icon i {
+            width: 40px;
+            height: 40px;
+            border-radius: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 5px;
+            font-size: 15px;
+            border: 1px solid;
+            cursor: pointer;
+            color: #18cfab; }
+            .our-work .grid .item .details .icon i:hover {
+              background-color: #18cfab;
+              color: #fff; }
