@@ -49,3 +49,8 @@
     display: flex;
     flex-direction: column;
 }
+
+@mixin blocks {
+    width: 25%;
+    height: 374px;
+}

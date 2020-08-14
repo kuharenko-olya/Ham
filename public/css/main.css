@@ -180,8 +180,8 @@ header .jumbotron {
   flex-direction: row; }
   .flex-container .element {
     background-color: #1c2a33;
+    width: 25%;
     height: 374px;
-    width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -728,3 +728,55 @@ section.features {
             padding-right: 10px; }
           .news .grid .item .desc .comments span:nth-child(2) {
             padding-left: 10px; }
+
+.statistics {
+  padding: 100px 0px; }
+  .statistics .grid {
+    display: flex;
+    flex-direction: row; }
+    .statistics .grid .item {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 374px; }
+      .statistics .grid .item .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; }
+        .statistics .grid .item .info .statistica {
+          font-size: 36px;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: #fff;
+          margin-bottom: 10px; }
+        .statistics .grid .item .info .icon {
+          color: #fff;
+          font-size: 25px;
+          height: 165px;
+          border-radius: 93px;
+          width: 165px;
+          margin: 0 auto;
+          margin-bottom: 25px;
+          margin-top: 65px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .statistics .grid .item .info .icon i {
+            width: 111px;
+            height: 111px;
+            background: #18cfab;
+            border-radius: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+    .statistics .grid .item:nth-child(odd) {
+      background-color: #25333c;
+      border-top: 7px solid #18cfab;
+      color: #18cfab; }
+    .statistics .grid .item:nth-child(even) {
+      background-color: #18cfab;
+      border-top: 7px solid #25333c;
+      color: #25333c; }
+    .statistics .grid .icon:nth-child(odd) {
+      border: 2px solid #18cfab; }

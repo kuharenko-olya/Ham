@@ -1,0 +1,83 @@
+.statistics {
+    padding: 100px 0px;
+
+    .grid {
+        @include row;
+
+        .item {
+            @include column;
+            @include blocks;
+
+            .info {
+                @include column;
+                justify-content: center;
+                text-align: center;
+
+
+                .statistica {
+                    font-size: 36px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $second-color;
+                    margin-bottom: 10px;
+                }
+
+                .icon {
+                    color: $second-color;
+                    font-size: 25px;
+                    height: 165px;
+                    border-radius: 93px;
+                    width: 165px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    margin-top: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        width: 111px;
+                        height: 111px;
+                        background: $primary-color;
+                        border-radius: 65px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+
+                    }
+
+
+
+                }
+
+
+
+            }
+
+
+        }
+
+        .item:nth-child(odd) {
+            background-color: $sixth-color;
+            border-top: 7px solid $primary-color;
+            color: $primary-color;
+        }
+
+        .item:nth-child(even) {
+            background-color: $primary-color;
+            border-top: 7px solid $sixth-color;
+            color: $sixth-color;
+        }
+
+        .icon:nth-child(odd) {
+            border: 2px solid #18cfab;
+        }
+
+
+
+    }
+
+
+
+}
