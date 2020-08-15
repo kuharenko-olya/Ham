@@ -804,9 +804,18 @@ section.features {
         text-transform: uppercase;
         color: #717171;
         background-color: #f8fcfe;
-        padding: 15px 0px; }
+        padding: 15px 0px;
+        position: relative; }
         .pricing .grid .item .price-type.active {
           color: #18cfab; }
+        .pricing .grid .item .price-type.active::before {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-image: url(../img/before.png);
+          width: 62px;
+          height: 62px; }
       .pricing .grid .item .price-value {
         background-color: #2e4a5b;
         padding: 32px 0px;

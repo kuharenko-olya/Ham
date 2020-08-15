@@ -20,10 +20,23 @@
                 color: $fourth-color;
                 background-color: #f8fcfe;
                 padding: 15px 0px;
+                position: relative;
 
                 &.active {
                     color: $primary-color;
                 }
+
+                &.active::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(../img/before.png);
+                    width: 62px;
+                    height: 62px;
+                }
+
+
 
 
             }
