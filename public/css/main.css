@@ -805,6 +805,8 @@ section.features {
         color: #717171;
         background-color: #f8fcfe;
         padding: 15px 0px; }
+        .pricing .grid .item .price-type.active {
+          color: #18cfab; }
       .pricing .grid .item .price-value {
         background-color: #2e4a5b;
         padding: 32px 0px;
@@ -817,6 +819,8 @@ section.features {
         .pricing .grid .item .price-value span:last-child {
           font-size: 15px;
           font-weight: 400; }
+        .pricing .grid .item .price-value.active {
+          background-color: #18cfab; }
       .pricing .grid .item .price-benefits li {
         color: #777777;
         font-size: 15px;
@@ -833,4 +837,7 @@ section.features {
           background-color: #2e4a5b;
           padding: 16px 50px;
           text-decoration: none;
-          color: #fff; }
+          color: #fff;
+          text-transform: uppercase; }
+          .pricing .grid .item .price-buy a.button.active {
+            background-color: #18cfab; }

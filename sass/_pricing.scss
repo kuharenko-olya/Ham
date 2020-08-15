@@ -20,6 +20,12 @@
                 color: $fourth-color;
                 background-color: #f8fcfe;
                 padding: 15px 0px;
+
+                &.active {
+                    color: $primary-color;
+                }
+
+
             }
 
             .price-value {
@@ -27,6 +33,7 @@
                 padding: 32px 0px;
                 color: $second-color;
                 border-bottom: 4px solid $second-color;
+
 
                 span:first-child {
                     font-size: 39px;
@@ -37,6 +44,10 @@
                 span:last-child {
                     font-size: 15px;
                     font-weight: 400;
+                }
+
+                &.active {
+                    background-color: $primary-color
                 }
 
             }
@@ -64,6 +75,12 @@
                     padding: 16px 50px;
                     text-decoration: none;
                     color: $second-color;
+                    text-transform: uppercase;
+
+                    &.active {
+                        background-color: $primary-color;
+                    }
+
                 }
 
             }
