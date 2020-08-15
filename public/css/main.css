@@ -784,3 +784,21 @@ section.features {
       background: #18cfab; }
     .statistics .grid .item:nth-child(even) i {
       background: #25333c; }
+
+.pricing {
+  padding: 100px 0px; }
+  .pricing .grid {
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px; }
+    .pricing .grid .item {
+      width: 25%;
+      height: 600px;
+      border-radius: 5px;
+      border: 1px solid #e1e1e1; }
+      .pricing .grid .item .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #717171;
+        text-align: center; }
