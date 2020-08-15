@@ -753,20 +753,18 @@ section.features {
         .statistics .grid .item .info .icon {
           color: #fff;
           font-size: 25px;
-          height: 165px;
           border-radius: 93px;
-          width: 165px;
           margin: 0 auto;
           margin-bottom: 25px;
           margin-top: 65px;
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          padding: 25px; }
           .statistics .grid .item .info .icon i {
+            border-radius: 65px;
             width: 111px;
             height: 111px;
-            background: #18cfab;
-            border-radius: 65px;
             display: flex;
             align-items: center;
             justify-content: center; }
@@ -778,5 +776,11 @@ section.features {
       background-color: #18cfab;
       border-top: 7px solid #25333c;
       color: #25333c; }
-    .statistics .grid .icon:nth-child(odd) {
+    .statistics .grid .item:nth-child(odd) .icon {
       border: 2px solid #18cfab; }
+    .statistics .grid .item:nth-child(even) .icon {
+      border: 2px solid #25333c; }
+    .statistics .grid .item:nth-child(odd) i {
+      background: #18cfab; }
+    .statistics .grid .item:nth-child(even) i {
+      background: #25333c; }

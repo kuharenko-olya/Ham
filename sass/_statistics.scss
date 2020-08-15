@@ -25,25 +25,22 @@
                 .icon {
                     color: $second-color;
                     font-size: 25px;
-                    height: 165px;
                     border-radius: 93px;
-                    width: 165px;
                     margin: 0 auto;
                     margin-bottom: 25px;
                     margin-top: 65px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    padding: 25px;
 
                     i {
+                        border-radius: 65px;
                         width: 111px;
                         height: 111px;
-                        background: $primary-color;
-                        border-radius: 65px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
 
                     }
 
@@ -70,14 +67,24 @@
             color: $sixth-color;
         }
 
-        .icon:nth-child(odd) {
+        .item:nth-child(odd) .icon {
             border: 2px solid #18cfab;
         }
 
 
+        .item:nth-child(even) .icon {
+            border: 2px solid $sixth-color;
+        }
 
+
+        .item:nth-child(odd) i {
+            background: $primary-color;
+        }
+
+
+
+        .item:nth-child(even) i {
+            background: $sixth-color;
+        }
     }
-
-
-
 }
