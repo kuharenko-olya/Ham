@@ -6,12 +6,12 @@
         color: $second-color;
     }
 
-
     .icon {
         color: $primary-color;
         font-size: 45px;
         margin-top: 69px;
         text-align: center;
+        margin-bottom: 42px;
     }
 
     p {
@@ -19,16 +19,24 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
+        margin-bottom: 42px;
     }
-
 
     .grid {
         @include column;
         text-align: center;
 
         .rewiew-item {
+            @include column;
+
             &.active .author {
                 color: $primary-color;
+            }
+
+            &.active .avatar {
+                border: 5px solid $primary-color;
+                border-radius: 86px;
+
             }
 
 
@@ -51,14 +59,68 @@
                 width: 143px;
                 height: 142px;
                 margin: 0 auto;
+                margin-bottom: 69px;
+            }
 
-                img {
-                    width: 100%;
-                    height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+            .slider {
+                display: flex;
+                margin: 0 auto;
+
+                .hover-arrow {
+                    padding: 20px 22px;
+                    border: 1px solid $eighth-color;
+                    cursor: pointer;
+                    margin: 0 auto;
+
+                    &:hover {
+                        background: $primary-color;
+
+                        i {
+                            color: $second-color;
+                        }
+                    }
+
+                    i {
+                        font-size: 35px;
+                        color: $eighth-color;
+
+                    }
+
+
+                }
+
+                .avatars {
+                    display: flex;
+                    align-self: center;
+
+                    div {
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 34px;
+                        margin-left: 34px;
+                        border: 3px solid #2c5f62;
+                        border-radius: 42px;
+
+
+                        &.active {
+                            transform: translateY(-10px);
+                            border: 1px solid $primary-color;
+                            border-radius: 33px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
                 }
             }
         }
-
     }
-
 }
