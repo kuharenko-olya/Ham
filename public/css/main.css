@@ -850,3 +850,42 @@ section.features {
           text-transform: uppercase; }
           .pricing .grid .item .price-buy a.button.active {
             background-color: #18cfab; }
+
+.rewiews {
+  padding: 100px 0px;
+  background-color: #2f404d; }
+  .rewiews h2 {
+    color: #fff; }
+  .rewiews .icon {
+    color: #18cfab;
+    font-size: 45px;
+    margin-top: 69px;
+    text-align: center; }
+  .rewiews p {
+    color: #bbbbbb;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; }
+  .rewiews .grid {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .rewiews .grid .rewiew-item.active .author {
+      color: #18cfab; }
+    .rewiews .grid .rewiew-item .author {
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 700; }
+    .rewiews .grid .rewiew-item .job {
+      color: #bbbbbb;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 27px;
+      margin-bottom: 25px; }
+    .rewiews .grid .rewiew-item .avatar {
+      width: 143px;
+      height: 142px;
+      margin: 0 auto; }
+      .rewiews .grid .rewiew-item .avatar img {
+        width: 100%;
+        height: 100%; }
