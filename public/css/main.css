@@ -991,3 +991,59 @@ section.features {
           align-items: center; }
           .team .grid .team-item .social a.icon i {
             font-size: 23px; }
+
+.about-project {
+  padding: 128px 0px;
+  background-color: #233641;
+  background-image: url(../img/left-image2.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 700px; }
+  .about-project h2:after {
+    display: none; }
+  .about-project h2 {
+    font-size: 47px;
+    font-weight: 400;
+    line-height: 65px;
+    color: #18cfab;
+    text-transform: uppercase;
+    margin-bottom: 116px; }
+    .about-project h2 span {
+      color: #fff;
+      font-weight: 400; }
+  .about-project .row {
+    justify-content: flex-end; }
+    .about-project .row .benefits {
+      display: flex;
+      width: 42%; }
+      .about-project .row .benefits .checks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 20px; }
+        .about-project .row .benefits .checks div {
+          border-radius: 15px;
+          background: #18cfab;
+          display: flex;
+          width: 24px;
+          height: 24px; }
+          .about-project .row .benefits .checks div i {
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 5px; }
+      .about-project .row .benefits li {
+        color: #f7f7f7;
+        line-height: 35px; }
+    .about-project .row a.button {
+      text-decoration: none;
+      color: #fff;
+      padding: 23px 25px;
+      border-radius: 4px;
+      background-color: #18cfab;
+      margin: 0 auto;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border-top: 5px solid #fff; }

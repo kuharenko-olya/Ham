@@ -22,17 +22,7 @@
         }
 
         a.button {
-            text-decoration: none;
-            color: $second-color;
-            padding: 23px 25px;
-            border-radius: 4px;
-            background-color: $primary-color;
-            margin: 0 auto;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            white-space: nowrap;
-            border-top: 5px solid $second-color;
+            @include same-button;
         }
 
     }
