@@ -1118,3 +1118,79 @@ section.features {
             padding-top: 12px; }
             .forma .row .my-container .forma-container form textarea::placeholder {
               color: #90aebd; }
+
+.footer {
+  padding: 130px 0px;
+  background-color: #1c2b33; }
+  .footer .grid {
+    display: flex;
+    flex-direction: row; }
+    .footer .grid .footer-item {
+      display: flex;
+      flex-direction: column; }
+      .footer .grid .footer-item .logo span:first-child {
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        font-family: "Montserrat - Regular"; }
+      .footer .grid .footer-item .logo span:last-child {
+        font-size: 40px;
+        font-family: "Montserrat - Regular";
+        color: #18cfab; }
+      .footer .grid .footer-item p {
+        color: #b2b2b2;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0; }
+      .footer .grid .footer-item .contact {
+        color: #b2b2b2;
+        font-family: "Montserrat - Regular";
+        font-size: 16px;
+        font-weight: 400; }
+      .footer .grid .footer-item h3 {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 56px; }
+      .footer .grid .footer-item .about-post {
+        display: flex;
+        flex-direction: row; }
+        .footer .grid .footer-item .about-post .image {
+          width: 103px;
+          height: 66px;
+          margin-right: 15px; }
+          .footer .grid .footer-item .about-post .image img {
+            width: 100%;
+            height: 100%; }
+        .footer .grid .footer-item .about-post .title {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 17px; }
+          .footer .grid .footer-item .about-post .title:hover {
+            color: #18cfab; }
+        .footer .grid .footer-item .about-post .description {
+          margin-bottom: 20px; }
+        .footer .grid .footer-item .about-post .date {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 30px;
+          margin-bottom: 29px; }
+        .footer .grid .footer-item .about-post hr {
+          border: 1px solid #294453;
+          width: 100%; }
+      .footer .grid .footer-item .tags {
+        display: flex;
+        flex-direction: row; }
+      .footer .grid .footer-item .items {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+        margin-right: 8px; }
+        .footer .grid .footer-item .items div {
+          border: 1px solid #d7d7d7;
+          color: #b8b8b8;
+          margin-bottom: 8px;
+          padding: 8px 14px; }
