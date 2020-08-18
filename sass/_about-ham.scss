@@ -4,7 +4,7 @@
     background-image: url(../img/left-image2.png);
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: 700px;
+    background-size: 900px;
 
     h2:after {
         display: none;
@@ -25,55 +25,64 @@
     }
 
     .row {
+        display: flex;
         justify-content: flex-end;
 
 
-        .benefits {
+        .wrapper {
             display: flex;
-            width: 42%;
+            flex-direction: column;
 
-            .checks {
-                @include column;
-                justify-content: space-between;
-                margin-right: 20px;
+            .benefits {
+                display: flex;
 
-                div {
-                    border-radius: 15px;
-                    background: $primary-color;
-                    display: flex;
-                    width: 24px;
-                    height: 24px;
+                .checks {
+                    @include column;
+                    justify-content: space-between;
+                    margin-right: 20px;
 
-                    i {
-                        font-size: 15px;
+                    div {
+                        border-radius: 15px;
+                        background: $primary-color;
                         display: flex;
-                        align-items: center;
-                        padding-left: 5px;
+                        width: 24px;
+                        height: 24px;
+
+                        i {
+                            font-size: 15px;
+                            display: flex;
+                            align-items: center;
+                            padding-left: 5px;
+                        }
+
                     }
-
                 }
+
+
+
+
+                li {
+                    color: #f7f7f7;
+                    line-height: 35px;
+                    font-size: 14px;
+                }
+
+
+
             }
 
+            .div {
+                margin-top: 30px;
+                width: 165px;
 
+                a.button {
+                    @include same-button;
+                    margin: 0;
+                }
 
-
-            li {
-                color: #f7f7f7;
-                line-height: 35px;
             }
 
-
-
         }
-
-        a.button {
-            @include same-button;
-        }
-
-
 
     }
-
-
-
 }

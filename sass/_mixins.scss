@@ -57,12 +57,14 @@
 
 
 @mixin same-button {
+    display: block;
     text-decoration: none;
     color: $second-color;
     padding: 23px 25px;
     border-radius: 4px;
     background-color: $primary-color;
     margin: 0 auto;
+    text-align: center;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
