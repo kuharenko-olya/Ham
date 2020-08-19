@@ -239,44 +239,6 @@ section.features {
       color: #18cfab;
       cursor: pointer; }
 
-@media only screen and (max-width: 768px) {
-  header .menu-container {
-    width: 700px; }
-  header .wrapper {
-    padding: 0 15px; }
-    header .wrapper .menus {
-      display: none; }
-  header .jumbotron {
-    padding: 110px 0px;
-    padding-bottom: 350px; }
-    header .jumbotron .menu-container {
-      width: 700px; }
-    header .jumbotron .titles h3 {
-      font-size: 29px;
-      margin-bottom: 60px; }
-    header .jumbotron .actions .prewiew {
-      top: 125px;
-      left: 0;
-      width: 170px;
-      margin: 0 auto; }
-    header .jumbotron a.button.right-indent {
-      margin-right: 0px; }
-  header .flex-container .element {
-    height: 172px; }
-    header .flex-container .element .feature {
-      font-size: 11px; }
-    header .flex-container .element img {
-      height: 40px;
-      margin-bottom: 25px; }
-  section.features {
-    padding: 60px 15px; }
-    section.features .container, section.features header .menu-container, header section.features .menu-container {
-      width: 100%; }
-    section.features .grid {
-      justify-content: center; }
-      section.features .grid p {
-        font-size: 18px; } }
-
 @media only screen and (max-width: 1024px) {
   header .menu-container {
     width: 995px; }
@@ -325,7 +287,64 @@ section.features {
       section.features .grid .item {
         width: 450px;
         padding: 0 12px;
-        margin-bottom: 25px; } }
+        margin-bottom: 25px; }
+  section.our-company {
+    background-image: none; }
+    section.our-company .container, section.our-company header .menu-container, header section.our-company .menu-container {
+      width: 1140px;
+      margin: 0 auto; }
+      section.our-company .container .company-container, section.our-company header .menu-container .company-container, header section.our-company .menu-container .company-container {
+        justify-content: center; }
+        section.our-company .container .company-container .tab-container, section.our-company header .menu-container .company-container .tab-container, header section.our-company .menu-container .company-container .tab-container {
+          width: 500px;
+          align-items: center; }
+  section.our-work .container, section.our-work header .menu-container, header section.our-work .menu-container {
+    width: 100%; } }
+
+@media only screen and (max-width: 768px) {
+  header .menu-container {
+    width: 700px; }
+  header .wrapper {
+    padding: 0 15px; }
+    header .wrapper .menus {
+      display: none; }
+  header .jumbotron {
+    padding: 110px 0px;
+    padding-bottom: 350px; }
+    header .jumbotron .menu-container {
+      width: 700px; }
+    header .jumbotron .titles h3 {
+      font-size: 29px;
+      margin-bottom: 60px; }
+    header .jumbotron .actions .prewiew {
+      top: 125px;
+      left: 0;
+      width: 170px;
+      margin: 0 auto; }
+    header .jumbotron a.button.right-indent {
+      margin-right: 0px; }
+  header .flex-container .element {
+    height: 172px; }
+    header .flex-container .element .feature {
+      font-size: 11px; }
+    header .flex-container .element img {
+      height: 40px;
+      margin-bottom: 25px; }
+  section.features {
+    padding: 60px 15px; }
+    section.features .container, section.features header .menu-container, header section.features .menu-container {
+      width: 100%; }
+    section.features .grid {
+      justify-content: center; }
+      section.features .grid p {
+        font-size: 18px; }
+  section.our-company {
+    background-image: none; }
+    section.our-company .container, section.our-company header .menu-container, header section.our-company .menu-container {
+      width: 100%;
+      margin: 0 auto; }
+      section.our-company .container .company-container, section.our-company header .menu-container .company-container, header section.our-company .menu-container .company-container {
+        justify-content: center; } }
 
 @media only screen and (max-width: 480px) {
   header .menu-container {
@@ -404,7 +423,18 @@ section.features {
       margin: 0 auto;
       top: 105px; }
     section.features h2 {
-      font-size: 30px; } }
+      font-size: 30px; }
+  section.our-company {
+    padding: 100px 15px; }
+    section.our-company .container, section.our-company header .menu-container, header section.our-company .menu-container {
+      width: 100%; }
+  section.our-work {
+    padding: 100px 15px; }
+    section.our-work .filters {
+      display: flex;
+      flex-wrap: wrap; }
+    section.our-work .item {
+      margin-bottom: 12px; } }
 
 .our-company {
   padding: 100px 0px;
@@ -514,12 +544,17 @@ section.features {
     flex-wrap: wrap;
     justify-content: center; }
     .our-work .grid .item {
-      width: 25%;
       display: flex;
       flex-direction: column;
       position: relative; }
       .our-work .grid .item:hover .details {
         display: flex; }
+      .our-work .grid .item .image {
+        width: 268px;
+        height: 208px; }
+        .our-work .grid .item .image img {
+          width: 100%;
+          height: 100%; }
       .our-work .grid .item .details {
         position: absolute;
         display: flex;
@@ -567,7 +602,10 @@ section.features {
             .our-work .grid .item .details .icon i:hover {
               background-color: #18cfab;
               color: #fff; }
-    .our-work .grid a.button {
+  .our-work .load-button {
+    display: flex;
+    justify-content: center; }
+    .our-work .load-button a.button {
       margin-top: 70px;
       border-radius: 4px;
       background-color: #18cfab;
@@ -576,7 +614,7 @@ section.features {
       font-weight: 700;
       text-transform: uppercase;
       padding: 20px 20px; }
-      .our-work .grid a.button i {
+      .our-work .load-button a.button i {
         padding-right: 10px;
         font-size: 15px; }
 
