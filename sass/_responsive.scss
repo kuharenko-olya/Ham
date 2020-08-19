@@ -120,7 +120,62 @@
         }
     }
 
+
+    section.our-services {
+        padding-right: 30px;
+        padding-left: 30px;
+
+        .container {
+            width: 100%;
+        }
+
+    }
+
+
+    section.purchase {
+        padding-right: 30px;
+        padding-left: 30px;
+
+        .container {
+            width: 100%;
+
+            h1 {
+                font-size: 32px;
+            }
+
+        }
+    }
+
+
+    section.news {
+        padding-right: 30px;
+        padding-left: 30px;
+
+
+        .container {
+            width: 100%;
+
+            .grid {
+                justify-content: space-evenly;
+
+                .item {
+                    flex-wrap: wrap;
+                    width: 250px;
+                }
+
+            }
+
+        }
+    }
+
+
+
+
+
+
+
 }
+
 
 @media only screen and (max-width: 768px) {
     header {
@@ -212,7 +267,56 @@
         }
     }
 
+
+
+    section.our-services {
+        padding-right: 30px;
+        padding-left: 30px;
+
+        .container {
+            width: 100%;
+
+            .tabs {
+                display: flex;
+                flex-wrap: wrap;
+
+                div {
+                    width: 25%;
+
+                    &.active::after {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    section.purchase {
+
+        .about {
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                padding-left: 12px;
+            }
+        }
+    }
+
+
+
+
+
 }
+
+
+
+
 
 @media only screen and (max-width: 480px) {
     header {
@@ -359,7 +463,8 @@
 
 
     section.our-company {
-        padding: 100px 15px;
+        padding-right: 15px;
+        padding-left: 15px;
 
         .container {
             width: 100%;
@@ -368,9 +473,8 @@
     }
 
     section.our-work {
-        padding: 100px 15px;
-
-
+        padding-right: 15px;
+        padding-left: 15px;
 
         .filters {
             display: flex;
@@ -381,6 +485,53 @@
             margin-bottom: 12px;
         }
 
+    }
+
+
+
+    section.our-services {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        .tab-container {
+
+            .tab-content {
+
+                .content-item {
+                    @include column;
+
+                    .image {
+                        margin: 0 auto;
+                        margin-bottom: 45px;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+    section.purchase {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .about {
+
+            h1 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    section.news {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
 }
