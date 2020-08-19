@@ -1178,9 +1178,11 @@ section.features {
           font-weight: 300;
           line-height: 30px;
           margin-bottom: 29px; }
-        .footer .grid .footer-item .about-post hr {
-          border: 1px solid #294453;
-          width: 100%; }
+      .footer .grid .footer-item hr {
+        border: none;
+        border-top: 1px solid #294453;
+        width: 100%;
+        margin-bottom: 35px; }
       .footer .grid .footer-item .tags {
         display: flex;
         flex-direction: row; }
@@ -1188,9 +1190,39 @@ section.features {
         display: flex;
         flex-direction: column;
         margin-bottom: 8px;
-        margin-right: 8px; }
+        margin-right: 8px;
+        cursor: pointer; }
         .footer .grid .footer-item .items div {
           border: 1px solid #d7d7d7;
           color: #b8b8b8;
           margin-bottom: 8px;
           padding: 8px 14px; }
+          .footer .grid .footer-item .items div.active, .footer .grid .footer-item .items div:hover {
+            color: #fff;
+            background: #18cfab;
+            border: 1px solid #18cfab; }
+      .footer .grid .footer-item .subscribe {
+        display: flex;
+        flex-direction: row;
+        margin-top: 23px; }
+        .footer .grid .footer-item .subscribe input[type=email] {
+          background-color: #22353f;
+          padding: 10px 12px;
+          padding-left: 12px;
+          border: none;
+          color: grey; }
+        .footer .grid .footer-item .subscribe input[type=submit] {
+          background-color: #294453;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #18cfab;
+          border: none;
+          padding: 13px 12px;
+          cursor: pointer; }
+      .footer .grid .footer-item .grid-flex {
+        display: flex;
+        flex-wrap: wrap; }
+        .footer .grid .footer-item .grid-flex .my-items {
+          display: flex;
+          flex-direction: column; }
