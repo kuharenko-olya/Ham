@@ -1124,60 +1124,80 @@ section.features {
   background-color: #1c2b33; }
   .footer .grid {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between; }
     .footer .grid .footer-item {
       display: flex;
-      flex-direction: column; }
-      .footer .grid .footer-item .logo span:first-child {
-        font-size: 40px;
-        font-weight: 700;
-        color: #fff;
-        font-family: "Montserrat - Regular"; }
-      .footer .grid .footer-item .logo span:last-child {
-        font-size: 40px;
-        font-family: "Montserrat - Regular";
-        color: #18cfab; }
+      flex-direction: column;
+      width: 100%; }
+      .footer .grid .footer-item.location {
+        max-width: 240px; }
+      .footer .grid .footer-item.recent-post {
+        max-width: 338px; }
+      .footer .grid .footer-item.section-tags {
+        max-width: 270px; }
+      .footer .grid .footer-item.feed {
+        max-width: 182px; }
+      .footer .grid .footer-item .logo {
+        margin-bottom: 35px; }
+        .footer .grid .footer-item .logo span:first-child {
+          font-size: 40px;
+          font-weight: 700;
+          color: #fff;
+          font-family: "Montserrat - Regular"; }
+        .footer .grid .footer-item .logo span:last-child {
+          font-size: 40px;
+          font-family: "Montserrat - Regular";
+          color: #18cfab; }
       .footer .grid .footer-item p {
         color: #b2b2b2;
         font-size: 14px;
         line-height: 26px;
         margin: 0; }
-      .footer .grid .footer-item .contact {
+      .footer .grid .footer-item .contact-us {
         color: #b2b2b2;
         font-family: "Montserrat - Regular";
         font-size: 16px;
-        font-weight: 400; }
+        font-weight: 400;
+        margin-top: 82px; }
+        .footer .grid .footer-item .contact-us span {
+          color: #b2b2b2; }
+        .footer .grid .footer-item .contact-us p:nth-child(3) {
+          margin-bottom: 37px; }
       .footer .grid .footer-item h3 {
         font-size: 18px;
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
-        margin-bottom: 56px; }
+        margin-bottom: 54px; }
       .footer .grid .footer-item .about-post {
         display: flex;
         flex-direction: row; }
         .footer .grid .footer-item .about-post .image {
-          width: 103px;
+          width: 75px;
           height: 66px;
           margin-right: 15px; }
           .footer .grid .footer-item .about-post .image img {
             width: 100%;
             height: 100%; }
-        .footer .grid .footer-item .about-post .title {
-          color: #fff;
-          font-size: 16px;
-          font-weight: 700;
-          text-transform: uppercase;
-          margin-bottom: 17px; }
-          .footer .grid .footer-item .about-post .title:hover {
-            color: #18cfab; }
-        .footer .grid .footer-item .about-post .description {
-          margin-bottom: 20px; }
-        .footer .grid .footer-item .about-post .date {
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 30px;
-          margin-bottom: 29px; }
+        .footer .grid .footer-item .about-post .post {
+          width: 250px; }
+          .footer .grid .footer-item .about-post .post .title {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 17px; }
+            .footer .grid .footer-item .about-post .post .title:hover {
+              color: #18cfab; }
+          .footer .grid .footer-item .about-post .post .description {
+            margin-bottom: 20px; }
+          .footer .grid .footer-item .about-post .post .date {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 30px;
+            margin-bottom: 29px;
+            color: #fff; }
       .footer .grid .footer-item hr {
         border: none;
         border-top: 1px solid #294453;
@@ -1225,4 +1245,12 @@ section.features {
         flex-wrap: wrap; }
         .footer .grid .footer-item .grid-flex .my-items {
           display: flex;
-          flex-direction: column; }
+          flex-direction: column;
+          margin-right: 15px;
+          margin-top: 15px; }
+          .footer .grid .footer-item .grid-flex .my-items .image {
+            width: 75px;
+            height: 75px; }
+            .footer .grid .footer-item .grid-flex .my-items .image img {
+              width: 100%;
+              height: 100%; }
