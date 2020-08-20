@@ -321,7 +321,79 @@ section.features {
         justify-content: space-evenly; }
         section.news .container .grid .item, section.news header .menu-container .grid .item, header section.news .menu-container .grid .item {
           flex-wrap: wrap;
-          width: 250px; } }
+          width: 250px; }
+  section.statistics .flex-container .element {
+    height: 345px; }
+    section.statistics .flex-container .element .info .icon {
+      margin-top: 35px; }
+  section.pricing {
+    padding-left: 30px;
+    padding-right: 30px; }
+    section.pricing .container, section.pricing header .menu-container, header section.pricing .menu-container {
+      width: 100%; }
+      section.pricing .container .grid .item, section.pricing header .menu-container .grid .item, header section.pricing .menu-container .grid .item {
+        height: 560px;
+        margin-right: 12px; }
+        section.pricing .container .grid .item .price-type, section.pricing header .menu-container .grid .item .price-type, header section.pricing .menu-container .grid .item .price-type {
+          font-size: 17px; }
+          section.pricing .container .grid .item .price-type.active::before, section.pricing header .menu-container .grid .item .price-type.active::before, header section.pricing .menu-container .grid .item .price-type.active::before {
+            height: 52px;
+            width: 60px; }
+        section.pricing .container .grid .item .price-value, section.pricing header .menu-container .grid .item .price-value, header section.pricing .menu-container .grid .item .price-value {
+          padding: 25px; }
+          section.pricing .container .grid .item .price-value span:first-child, section.pricing header .menu-container .grid .item .price-value span:first-child, header section.pricing .menu-container .grid .item .price-value span:first-child {
+            font-size: 20px; }
+  section.rewiews {
+    padding-left: 30px;
+    padding-right: 30px; }
+    section.rewiews .container, section.rewiews header .menu-container, header section.rewiews .menu-container {
+      width: 100%; }
+      section.rewiews .container p, section.rewiews header .menu-container p, header section.rewiews .menu-container p {
+        font-size: 13px;
+        padding: 0 170px;
+        line-height: 20px; }
+  section.team {
+    padding-left: 30px;
+    padding-right: 30px; }
+    section.team .container, section.team header .menu-container, header section.team .menu-container {
+      width: 100%; }
+  section.about-project {
+    padding: 100px 30px;
+    background-image: none; }
+    section.about-project .container, section.about-project header .menu-container, header section.about-project .menu-container {
+      width: 100%; }
+      section.about-project .container h2, section.about-project header .menu-container h2, header section.about-project .menu-container h2 {
+        font-size: 30px;
+        padding: 0 21px;
+        margin-bottom: 60px; }
+      section.about-project .container .row, section.about-project header .menu-container .row, header section.about-project .menu-container .row {
+        justify-content: center; }
+        section.about-project .container .row .wrapper .div, section.about-project header .menu-container .row .wrapper .div, header section.about-project .menu-container .row .wrapper .div {
+          width: 155px; }
+          section.about-project .container .row .wrapper .div a.button, section.about-project header .menu-container .row .wrapper .div a.button, header section.about-project .menu-container .row .wrapper .div a.button {
+            padding: 20px 0px; }
+  section.forma {
+    padding-left: 30px;
+    padding-right: 30px; }
+    section.forma .my-container {
+      justify-content: center; }
+      section.forma .my-container .left-image {
+        display: none; }
+      section.forma .my-container .forma-container .title {
+        justify-content: center; }
+  footer.footer {
+    padding-left: 30px;
+    padding-right: 30px; }
+    footer.footer .container, footer.footer header .menu-container, header footer.footer .menu-container {
+      width: 100%; }
+      footer.footer .container .grid, footer.footer header .menu-container .grid, header footer.footer .menu-container .grid {
+        flex-wrap: wrap;
+        justify-content: center; }
+        footer.footer .container .grid .footer-item-location, footer.footer header .menu-container .grid .footer-item-location, header footer.footer .menu-container .grid .footer-item-location {
+          max-width: 262px; }
+        footer.footer .container .grid .footer-item.recent-post, footer.footer header .menu-container .grid .footer-item.recent-post, header footer.footer .menu-container .grid .footer-item.recent-post {
+          max-width: 335px;
+          padding: 0 25px; } }
 
 @media only screen and (max-width: 768px) {
   header .menu-container {
@@ -382,7 +454,45 @@ section.features {
   section.purchase .about h1 {
     font-size: 24px; }
   section.purchase .about p {
-    padding-left: 12px; } }
+    padding-left: 12px; }
+  section.statistics .flex-container .element {
+    height: 310px; }
+    section.statistics .flex-container .element .info .statistica {
+      font-size: 30px; }
+    section.statistics .flex-container .element .info .icon {
+      padding: 15px; }
+  section.pricing .grid {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    section.pricing .grid .item {
+      width: 44%;
+      margin-bottom: 65px; }
+  section.rewiews .container p, section.rewiews header .menu-container p, header section.rewiews .menu-container p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 60px; }
+  section.team .grid {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    section.team .grid .team-item {
+      width: 35%;
+      margin-bottom: 40px; }
+  section.about-project .container h2, section.about-project header .menu-container h2, header section.about-project .menu-container h2 {
+    font-size: 27px;
+    line-height: 50px;
+    padding: 0 45px; }
+  section.about-project .container .row .wrapper .div, section.about-project header .menu-container .row .wrapper .div, header section.about-project .menu-container .row .wrapper .div {
+    margin: 30px auto; }
+  section.about-project .container .row .wrapper .benefits li, section.about-project header .menu-container .row .wrapper .benefits li, header section.about-project .menu-container .row .wrapper .benefits li {
+    font-size: 18px; }
+  footer.footer .container .grid, footer.footer header .menu-container .grid, header footer.footer .menu-container .grid {
+    justify-content: space-between; }
+  footer.footer-bottom {
+    padding-right: 30px;
+    padding-left: 30px; }
+    footer.footer-bottom .container, footer.footer-bottom header .menu-container, header footer.footer-bottom .menu-container {
+      width: 100%; } }
 
 @media only screen and (max-width: 480px) {
   header .menu-container {
@@ -426,10 +536,6 @@ section.features {
       header .flex-container .element img {
         height: 35px;
         margin-bottom: 15px; }
-    header .flex-container .element:nth-child(1) {
-      order: 1; }
-    header .flex-container .element:nth-child(2) {
-      order: 2; }
     header .flex-container .element:nth-child(3) {
       order: 4;
       border-top: none; }
@@ -493,7 +599,73 @@ section.features {
       font-size: 14px; }
   section.news {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  section.statistics .flex-container {
+    flex-wrap: wrap; }
+    section.statistics .flex-container .element {
+      width: 50%;
+      height: 310px; }
+      section.statistics .flex-container .element .info .statistica {
+        font-size: 25px; }
+    section.statistics .flex-container .element:nth-child(3) {
+      order: 4;
+      border-top: none; }
+    section.statistics .flex-container .element:nth-child(4) {
+      order: 3;
+      border-top: none; }
+  section.pricing {
+    padding-left: 15px;
+    padding-right: 15px; }
+    section.pricing .grid {
+      justify-content: center; }
+      section.pricing .grid .item {
+        width: 300px; }
+  section.rewiews {
+    padding-left: 15px;
+    padding-right: 15px; }
+    section.rewiews .container h2, section.rewiews header .menu-container h2, header section.rewiews .menu-container h2 {
+      font-size: 23px; }
+    section.rewiews .container p, section.rewiews header .menu-container p, header section.rewiews .menu-container p {
+      padding: 0 35px;
+      text-align: center; }
+    section.rewiews .container .grid .slider .hover-arrow, section.rewiews header .menu-container .grid .slider .hover-arrow, header section.rewiews .menu-container .grid .slider .hover-arrow {
+      display: none; }
+  section.team {
+    padding-left: 15px;
+    padding-right: 15px; }
+    section.team .grid {
+      justify-content: center; }
+      section.team .grid .team-item {
+        width: 250px; }
+  section.about-project {
+    padding-left: 15px;
+    padding-right: 15px; }
+    section.about-project .container h2, section.about-project header .menu-container h2, header section.about-project .menu-container h2 {
+      font-size: 24px;
+      line-height: 47px;
+      padding: 0 4px; }
+  section.forma {
+    padding-left: 15px;
+    padding-right: 15px; }
+    section.forma .row .my-container .forma-container {
+      width: 365px;
+      padding-left: 0px; }
+  footer.footer {
+    padding-left: 15px;
+    padding-right: 15px; }
+    footer.footer .container .grid, footer.footer header .menu-container .grid, header footer.footer .menu-container .grid {
+      justify-content: center; }
+      footer.footer .container .grid .footer-item p, footer.footer header .menu-container .grid .footer-item p, header footer.footer .menu-container .grid .footer-item p {
+        font-size: 18px; }
+      footer.footer .container .grid .footer-item .contact-us, footer.footer header .menu-container .grid .footer-item .contact-us, header footer.footer .menu-container .grid .footer-item .contact-us {
+        margin-bottom: 45px; }
+      footer.footer .container .grid .footer-item .subscribe, footer.footer header .menu-container .grid .footer-item .subscribe, header footer.footer .menu-container .grid .footer-item .subscribe {
+        margin-bottom: 100px; }
+  .footer-bottom {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .footer-bottom .container .copyright p, .footer-bottom header .menu-container .copyright p, header .footer-bottom .menu-container .copyright p {
+      font-size: 18px; } }
 
 .our-company {
   padding: 100px 0px;
@@ -830,26 +1002,27 @@ section.features {
 
 .statistics {
   padding: 100px 0px; }
-  .statistics .grid {
+  .statistics .flex-container {
     display: flex;
     flex-direction: row; }
-    .statistics .grid .item {
+    .statistics .flex-container .element {
       display: flex;
       flex-direction: column;
       width: 25%;
-      height: 374px; }
-      .statistics .grid .item .info {
+      height: 374px;
+      background-color: #25333c; }
+      .statistics .flex-container .element .info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center; }
-        .statistics .grid .item .info .statistica {
+        .statistics .flex-container .element .info .statistica {
           font-size: 36px;
           font-weight: 400;
           text-transform: uppercase;
           color: #fff;
           margin-bottom: 10px; }
-        .statistics .grid .item .info .icon {
+        .statistics .flex-container .element .info .icon {
           color: #fff;
           font-size: 25px;
           border-radius: 93px;
@@ -860,28 +1033,35 @@ section.features {
           justify-content: center;
           align-items: center;
           padding: 25px; }
-          .statistics .grid .item .info .icon i {
+          .statistics .flex-container .element .info .icon i {
             border-radius: 65px;
             width: 111px;
             height: 111px;
             display: flex;
             align-items: center;
             justify-content: center; }
-    .statistics .grid .item:nth-child(odd) {
-      background-color: #25333c;
+    .statistics .flex-container .element:nth-child(odd) {
       border-top: 7px solid #18cfab;
       color: #18cfab; }
-    .statistics .grid .item:nth-child(even) {
+    .statistics .flex-container .element:nth-child(even) {
       background-color: #18cfab;
       border-top: 7px solid #25333c;
       color: #25333c; }
-    .statistics .grid .item:nth-child(odd) .icon {
+    .statistics .flex-container .element:nth-child(1) {
+      order: 1; }
+    .statistics .flex-container .element:nth-child(2) {
+      order: 2; }
+    .statistics .flex-container .element:nth-child(3) {
+      order: 3; }
+    .statistics .flex-container .element:nth-child(4) {
+      order: 4; }
+    .statistics .flex-container .element:nth-child(odd) .icon {
       border: 2px solid #18cfab; }
-    .statistics .grid .item:nth-child(even) .icon {
+    .statistics .flex-container .element:nth-child(even) .icon {
       border: 2px solid #25333c; }
-    .statistics .grid .item:nth-child(odd) i {
+    .statistics .flex-container .element:nth-child(odd) i {
       background: #18cfab; }
-    .statistics .grid .item:nth-child(even) i {
+    .statistics .flex-container .element:nth-child(even) i {
       background: #25333c; }
 
 .pricing {
@@ -914,7 +1094,8 @@ section.features {
           bottom: 0;
           background-image: url(../img/before.png);
           width: 62px;
-          height: 62px; }
+          height: 62px;
+          background-repeat: no-repeat; }
       .pricing .grid .item .price-value {
         background-color: #2e4a5b;
         padding: 32px 0px;
@@ -1004,7 +1185,8 @@ section.features {
           padding: 20px 22px;
           border: 1px solid #bbbbbb;
           cursor: pointer;
-          margin: 0 auto; }
+          margin-right: 12px;
+          margin-left: 12px; }
           .rewiews .grid .rewiew-item .slider .hover-arrow:hover {
             background: #18cfab; }
             .rewiews .grid .rewiew-item .slider .hover-arrow:hover i {
@@ -1014,12 +1196,12 @@ section.features {
             color: #bbbbbb; }
         .rewiews .grid .rewiew-item .slider .avatars {
           display: flex;
-          align-self: center; }
+          align-self: center;
+          width: 350px;
+          justify-content: space-between; }
           .rewiews .grid .rewiew-item .slider .avatars div {
             width: 60px;
             height: 60px;
-            margin-right: 34px;
-            margin-left: 34px;
             border: 3px solid #2c5f62;
             border-radius: 42px; }
             .rewiews .grid .rewiew-item .slider .avatars div.active {

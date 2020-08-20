@@ -149,14 +149,12 @@ header {
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
+    @include row;
 
     .element {
         background-color: #1c2a33;
         @include blocks;
-        display: flex;
-        flex-direction: column;
+        @include column;
         justify-content: center;
         text-align: center;
 

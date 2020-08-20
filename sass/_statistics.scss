@@ -1,12 +1,13 @@
 .statistics {
     padding: 100px 0px;
 
-    .grid {
+    .flex-container {
         @include row;
 
-        .item {
+        .element {
             @include column;
             @include blocks;
+            background-color: $sixth-color;
 
             .info {
                 @include column;
@@ -55,35 +56,52 @@
 
         }
 
-        .item:nth-child(odd) {
-            background-color: $sixth-color;
+        .element:nth-child(odd) {
             border-top: 7px solid $primary-color;
             color: $primary-color;
         }
 
-        .item:nth-child(even) {
+        .element:nth-child(even) {
             background-color: $primary-color;
             border-top: 7px solid $sixth-color;
             color: $sixth-color;
         }
 
-        .item:nth-child(odd) .icon {
+
+        .element:nth-child(1) {
+            order: 1;
+        }
+
+
+        .element:nth-child(2) {
+            order: 2;
+        }
+
+        .element:nth-child(3) {
+            order: 3;
+        }
+
+        .element:nth-child(4) {
+            order: 4;
+        }
+
+        .element:nth-child(odd) .icon {
             border: 2px solid #18cfab;
         }
 
 
-        .item:nth-child(even) .icon {
+        .element:nth-child(even) .icon {
             border: 2px solid $sixth-color;
         }
 
 
-        .item:nth-child(odd) i {
+        .element:nth-child(odd) i {
             background: $primary-color;
         }
 
 
 
-        .item:nth-child(even) i {
+        .element:nth-child(even) i {
             background: $sixth-color;
         }
     }
