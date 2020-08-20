@@ -1,0 +1,108 @@
+.statistics {
+    padding: 100px 0px;
+
+    .flex-container {
+        @include row;
+
+        .element {
+            @include column;
+            @include blocks;
+            background-color: $sixth-color;
+
+            .info {
+                @include column;
+                justify-content: center;
+                text-align: center;
+
+
+                .statistica {
+                    font-size: 36px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: $second-color;
+                    margin-bottom: 10px;
+                }
+
+                .icon {
+                    color: $second-color;
+                    font-size: 25px;
+                    border-radius: 93px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    margin-top: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 25px;
+
+                    i {
+                        border-radius: 65px;
+                        width: 111px;
+                        height: 111px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+
+
+
+                }
+
+
+
+            }
+
+
+        }
+
+        .element:nth-child(odd) {
+            border-top: 7px solid $primary-color;
+            color: $primary-color;
+        }
+
+        .element:nth-child(even) {
+            background-color: $primary-color;
+            border-top: 7px solid $sixth-color;
+            color: $sixth-color;
+        }
+
+
+        .element:nth-child(1) {
+            order: 1;
+        }
+
+
+        .element:nth-child(2) {
+            order: 2;
+        }
+
+        .element:nth-child(3) {
+            order: 3;
+        }
+
+        .element:nth-child(4) {
+            order: 4;
+        }
+
+        .element:nth-child(odd) .icon {
+            border: 2px solid #18cfab;
+        }
+
+
+        .element:nth-child(even) .icon {
+            border: 2px solid $sixth-color;
+        }
+
+
+        .element:nth-child(odd) i {
+            background: $primary-color;
+        }
+
+
+
+        .element:nth-child(even) i {
+            background: $sixth-color;
+        }
+    }
+}

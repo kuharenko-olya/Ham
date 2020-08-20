@@ -1,0 +1,30 @@
+.purchase {
+    background-color: #41474b;
+    padding: 130px 0px;
+
+    .about {
+        @include column;
+        text-align: center;
+
+        h1 {
+            color: $primary-color;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 16px;
+            color: #d8d8d8;
+            font-weight: 600;
+            margin-bottom: 80px;
+            line-height: 40px;
+        }
+
+        a.button {
+            @include same-button;
+        }
+
+    }
+
+}

@@ -1,0 +1,89 @@
+.our-company {
+    padding: 100px 0px;
+    background-color: #0a0f14;
+    background-image: url(../img/left-image.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 700px;
+
+    .company-container {
+        @include row;
+        justify-content: flex-end;
+
+        .tab-container {
+            @include column;
+            align-items: baseline;
+            width: 50%;
+
+            h2 {
+                color: $second-color;
+            }
+
+            .tabs {
+                @include row;
+                width: 392px;
+                justify-content: space-between;
+                color: $second-color;
+                margin-top: 83px;
+                margin-bottom: 65px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                div {
+                    border-top: 2px solid #0a0f14;
+                    padding-top: 10px;
+
+                    &:hover {
+                        color: $primary-color;
+                        border-top: 2px solid $primary-color;
+                    }
+                }
+            }
+
+            .tab-content {
+                width: 100%;
+                border-radius: 4px;
+
+
+                .progress-item {
+                    height: 40px;
+                    border-radius: 4px;
+                    border: 1px solid #5e6062;
+                    margin-top: 15px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &:hover {
+                        .progress {
+                            width: calc(100% + 2px);
+                        }
+                    }
+
+                    .progress {
+                        height: 42px;
+                        border-radius: 4px;
+                        position: absolute;
+                        top: -1px;
+                        left: -1px;
+                        transition: .5s linear;
+                    }
+
+                    .progress-title {
+                        font-size: 13px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: $second-color;
+                        position: absolute;
+                        display: flex;
+                        top: 0;
+                        z-index: 1;
+                        align-items: center;
+                        height: 100%;
+                        left: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

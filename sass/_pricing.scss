@@ -1,0 +1,101 @@
+.pricing {
+    padding: 100px 0px;
+
+    .grid {
+        @include row;
+        margin-top: 70px;
+
+        .item {
+            width: 25%;
+            height: 600px;
+            border-radius: 5px;
+            border: 1px solid #e1e1e1;
+            text-align: center;
+            align-self: flex-end;
+
+            .price-type {
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $fourth-color;
+                background-color: #f8fcfe;
+                padding: 15px 0px;
+                position: relative;
+
+                &.active {
+                    color: $primary-color;
+                }
+
+                &.active::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url(../img/before.png);
+                    width: 62px;
+                    height: 62px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .price-value {
+                background-color: #2e4a5b;
+                padding: 32px 0px;
+                color: $second-color;
+                border-bottom: 4px solid $second-color;
+
+
+                span:first-child {
+                    font-size: 39px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                span:last-child {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+
+                &.active {
+                    background-color: $primary-color
+                }
+
+            }
+
+            .price-benefits {
+                li {
+                    color: $fifth-color;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 46px;
+                    border-top: 1px solid #e3e3e3;
+                    border-bottom: 1px solid $seventh-color;
+                }
+
+            }
+
+            .price-buy {
+                display: flex;
+                justify-content: center;
+                padding: 25px 0px;
+
+                a.button {
+                    border-radius: 3px;
+                    background-color: #2e4a5b;
+                    padding: 16px 50px;
+                    text-decoration: none;
+                    color: $second-color;
+                    text-transform: uppercase;
+
+                    &.active {
+                        background-color: $primary-color;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}

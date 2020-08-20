@@ -69,6 +69,10 @@ header {
                 margin-bottom: 30px;
             }
 
+            h2:after {
+                display: none;
+            }
+
             h1,
             h2,
                 {
@@ -144,55 +148,52 @@ header {
     }
 }
 
-    .flex-container {
-        display: flex;
-        flex-direction: row;
+.flex-container {
+    @include row;
 
-        .element {
-            background-color: #1c2a33;
-            height: 374px;
-            width: 480px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
+    .element {
+        background-color: #1c2a33;
+        @include blocks;
+        @include column;
+        justify-content: center;
+        text-align: center;
 
-            img {
-                height: 97px;
-                margin-bottom: 48px;
-            }
-
-            .feature {
-                font-size: 20px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-        }
-        
-         .element:nth-child(odd) {
-            @include primary-border-top;
+        img {
+            height: 97px;
+            margin-bottom: 48px;
         }
 
-        .element:nth-child(even) {
-            @include white-border-top;
-            background-color: $primary-color;
+        .feature {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
-        
-        .element:nth-child(1){
-            order: 1;
-        }
-        
-        
-        .element:nth-child(2){
-            order: 2;
-        }
-        
-         .element:nth-child(3){
-            order: 3;
-        }
-        
-         .element:nth-child(4){
-            order: 4;
-        }
-        
     }
+
+    .element:nth-child(odd) {
+        @include primary-border-top;
+    }
+
+    .element:nth-child(even) {
+        @include white-border-top;
+        background-color: $primary-color;
+    }
+
+    .element:nth-child(1) {
+        order: 1;
+    }
+
+
+    .element:nth-child(2) {
+        order: 2;
+    }
+
+    .element:nth-child(3) {
+        order: 3;
+    }
+
+    .element:nth-child(4) {
+        order: 4;
+    }
+
+}

@@ -1,0 +1,102 @@
+.forma {
+    padding-top: 128px;
+    padding-bottom: 134px;
+
+    .row {
+        @include row;
+        justify-content: center;
+
+
+
+
+
+        .my-container {
+            @include row;
+            width: 100%;
+
+            .left-image {
+                width: 50%;
+                height: 549px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+
+
+
+            .forma-container {
+                @include column;
+                width: 100%;
+                max-width: 500px;
+                padding-left: 30px;
+                align-self: flex-end;
+
+
+
+                .title {
+                    margin-bottom: 111px;
+                    display: flex;
+                }
+
+
+
+                form {
+                    @include column;
+
+
+                    input {
+                        padding: 18px 0px;
+                        padding-left: 10px;
+                        margin: 10px 0px;
+                        border: 1px solid #e6edec;
+
+                        &::placeholder {
+                            color: #90aebd;
+                            font-size: 14px;
+
+                        }
+
+
+
+
+                    }
+
+                    input[type=submit] {
+                        background-color: $primary-color;
+                        border: none;
+                        color: white;
+                        padding: 17px 0px;
+                        text-decoration: none;
+                        cursor: pointer;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-weight: 700;
+                        margin-top: 10px;
+                        border-bottom: 5px solid #08bf9b;
+                        border-radius: 3px;
+
+                    }
+
+                    textarea {
+                        padding-left: 10px;
+                        margin: 10px 0px;
+                        border: 1px solid #e6edec;
+                        padding-top: 12px;
+
+                        &::placeholder {
+                            color: #90aebd;
+                        }
+                    }
+
+
+                }
+
+            }
+
+        }
+
+    }
+}
