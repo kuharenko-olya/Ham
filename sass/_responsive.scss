@@ -607,9 +607,6 @@
 }
 
 
-
-
-
 @media only screen and (max-width: 480px) {
     header {
 
@@ -951,8 +948,6 @@
 
 
     footer.footer {
-        padding-left: 15px;
-        padding-right: 15px;
 
         .container {
             .grid {
@@ -976,8 +971,6 @@
     }
 
     .footer-bottom {
-        padding-left: 15px;
-        padding-right: 15px;
 
         .container {
             .copyright p {
@@ -986,6 +979,84 @@
 
         }
 
+    }
+
+}
+
+
+@media only screen and (max-width: 360px) {
+
+    section.features {
+
+        h2::after {
+            top: 100px;
+        }
+
+    }
+
+
+    section.our-company {
+
+        .company-container {
+            .tab-container {
+
+                .tabs {
+                    width: 310px;
+                    font-size: 13px;
+                }
+
+                .tab-content {
+                    width: 290px;
+                }
+
+                h2 {
+                    font-size: 25px;
+                }
+
+            }
+
+        }
+    }
+
+
+    section.our-work {
+
+        h2::after {
+            top: 100px;
+        }
+
+        .filters {
+            div:nth-child(2) {
+                border: 1px solid #ebebeb;
+            }
+
+            div:nth-child(4) {
+                border: 1px solid #ebebeb;
+            }
+
+        }
+
+    }
+
+    section.rewiews {
+
+        .grid {
+            .rewiew-item {
+                .slider {
+                    .avatars {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    section.pricing {
+        h2::after {
+            top: 100px;
+        }
     }
 
 }
