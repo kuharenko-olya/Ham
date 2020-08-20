@@ -650,22 +650,37 @@ section.features {
     section.forma .row .my-container .forma-container {
       width: 365px;
       padding-left: 0px; }
-  footer.footer {
-    padding-left: 15px;
-    padding-right: 15px; }
-    footer.footer .container .grid, footer.footer header .menu-container .grid, header footer.footer .menu-container .grid {
-      justify-content: center; }
-      footer.footer .container .grid .footer-item p, footer.footer header .menu-container .grid .footer-item p, header footer.footer .menu-container .grid .footer-item p {
-        font-size: 18px; }
-      footer.footer .container .grid .footer-item .contact-us, footer.footer header .menu-container .grid .footer-item .contact-us, header footer.footer .menu-container .grid .footer-item .contact-us {
-        margin-bottom: 45px; }
-      footer.footer .container .grid .footer-item .subscribe, footer.footer header .menu-container .grid .footer-item .subscribe, header footer.footer .menu-container .grid .footer-item .subscribe {
-        margin-bottom: 100px; }
-  .footer-bottom {
-    padding-left: 15px;
-    padding-right: 15px; }
-    .footer-bottom .container .copyright p, .footer-bottom header .menu-container .copyright p, header .footer-bottom .menu-container .copyright p {
-      font-size: 18px; } }
+  footer.footer .container .grid, footer.footer header .menu-container .grid, header footer.footer .menu-container .grid {
+    justify-content: center; }
+    footer.footer .container .grid .footer-item p, footer.footer header .menu-container .grid .footer-item p, header footer.footer .menu-container .grid .footer-item p {
+      font-size: 18px; }
+    footer.footer .container .grid .footer-item .contact-us, footer.footer header .menu-container .grid .footer-item .contact-us, header footer.footer .menu-container .grid .footer-item .contact-us {
+      margin-bottom: 45px; }
+    footer.footer .container .grid .footer-item .subscribe, footer.footer header .menu-container .grid .footer-item .subscribe, header footer.footer .menu-container .grid .footer-item .subscribe {
+      margin-bottom: 100px; }
+  .footer-bottom .container .copyright p, .footer-bottom header .menu-container .copyright p, header .footer-bottom .menu-container .copyright p {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 360px) {
+  section.features h2::after {
+    top: 100px; }
+  section.our-company .company-container .tab-container .tabs {
+    width: 310px;
+    font-size: 13px; }
+  section.our-company .company-container .tab-container .tab-content {
+    width: 290px; }
+  section.our-company .company-container .tab-container h2 {
+    font-size: 25px; }
+  section.our-work h2::after {
+    top: 100px; }
+  section.our-work .filters div:nth-child(2) {
+    border: 1px solid #ebebeb; }
+  section.our-work .filters div:nth-child(4) {
+    border: 1px solid #ebebeb; }
+  section.rewiews .grid .rewiew-item .slider .avatars {
+    width: 300px; }
+  section.pricing h2::after {
+    top: 100px; } }
 
 .our-company {
   padding: 100px 0px;
