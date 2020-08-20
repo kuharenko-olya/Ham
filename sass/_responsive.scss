@@ -1038,7 +1038,28 @@
 
     }
 
+
+    section.our-services {
+        .tab-container {
+            .tab-content {
+                .content-item {
+                    .desc {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
     section.rewiews {
+
+        h2::after {
+            top: 100px;
+        }
 
         .grid {
             .rewiew-item {
@@ -1054,8 +1075,9 @@
 
 
     section.pricing {
+
         h2::after {
-            top: 100px;
+            top: 95px;
         }
     }
 

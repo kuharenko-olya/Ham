@@ -677,10 +677,15 @@ section.features {
     border: 1px solid #ebebeb; }
   section.our-work .filters div:nth-child(4) {
     border: 1px solid #ebebeb; }
+  section.our-services .tab-container .tab-content .content-item .desc {
+    font-size: 18px;
+    text-align: center; }
+  section.rewiews h2::after {
+    top: 100px; }
   section.rewiews .grid .rewiew-item .slider .avatars {
     width: 300px; }
   section.pricing h2::after {
-    top: 100px; } }
+    top: 95px; } }
 
 .our-company {
   padding: 100px 0px;
